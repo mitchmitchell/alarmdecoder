@@ -79,7 +79,7 @@ class Zonetracker(object):
     on_fault = event.Event("This event is called when the device detects a zone fault.\n\n**Callback definition:** *def callback(device, zone)*")
     on_restore = event.Event("This event is called when the device detects that a fault is restored.\n\n**Callback definition:** *def callback(device, zone)*")
 
-    EXPIRE = 30
+    EXPIRE = 60
     """Zone expiration timeout."""
 
     @property
